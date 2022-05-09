@@ -1,0 +1,364 @@
+<?xml version="1.0" ?>
+<robot name="coque" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find coque_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find coque_description)/urdf/coque.trans" />
+<xacro:include filename="$(find coque_description)/urdf/coque.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.19999999984220831 0.09999999998866706 0.1900000000001411" rpy="0 0 0"/>
+    <mass value="36.77568971897826"/>
+    <inertia ixx="0.121044" iyy="0.397759" izz="0.483156" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Componente14_1">
+  <inertial>
+    <origin xyz="-0.0487095880107167 0.012002184670218241 -0.04870883556070173" rpy="0 0 0"/>
+    <mass value="0.4512300751073575"/>
+    <inertia ixx="0.000427" iyy="0.000821" izz="0.000427" ixy="-0.0" iyz="-0.0" ixz="-0.000399"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.147209 0.04002 -0.097791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente14_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.147209 0.04002 -0.097791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente14_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Componente13_1">
+  <inertial>
+    <origin xyz="0.032472902263712265 0.02250126091999174 -0.032472874697501514" rpy="0 0 0"/>
+    <mass value="1.730683223922294"/>
+    <inertia ixx="0.001825" iyy="0.003101" izz="0.001825" ixy="-0.0" iyz="0.0" ixz="0.001328"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.055 0.05 -0.19" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente13_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.055 0.05 -0.19" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente13_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Componente15_1">
+  <inertial>
+    <origin xyz="-0.024999999941118504 -0.006031299506245279 2.8372990068525894e-10" rpy="0 0 0"/>
+    <mass value="1.4452024438553985"/>
+    <inertia ixx="0.001211" iyy="0.000622" izz="0.001138" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.08 -0.04 -0.19" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente15_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.08 -0.04 -0.19" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente15_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Componente5_1">
+  <inertial>
+    <origin xyz="-0.04870958801071666 -0.012002184670218019 -0.04870883556070176" rpy="0 0 0"/>
+    <mass value="0.4512300751073571"/>
+    <inertia ixx="0.000427" iyy="0.000821" izz="0.000427" ixy="0.0" iyz="0.0" ixz="-0.000399"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.147209 -0.24002 -0.097791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.147209 -0.24002 -0.097791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Componente4_1">
+  <inertial>
+    <origin xyz="0.03247284797238758 -0.022501267322789453 -0.03247281305519534" rpy="0 0 0"/>
+    <mass value="1.7306814821728707"/>
+    <inertia ixx="0.001825" iyy="0.003101" izz="0.001825" ixy="0.0" iyz="-0.0" ixz="0.001328"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.055 -0.25 -0.19" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.055 -0.25 -0.19" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Componente6_1">
+  <inertial>
+    <origin xyz="-0.024999999941118504 0.006031299506245286 2.8372990068525894e-10" rpy="0 0 0"/>
+    <mass value="1.4452024438553985"/>
+    <inertia ixx="0.001211" iyy="0.000622" izz="0.001138" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.08 -0.16 -0.19" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.08 -0.16 -0.19" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Componente9_1">
+  <inertial>
+    <origin xyz="0.032472847972341345 -0.022501665604991616 -0.03247281305519567" rpy="0 0 0"/>
+    <mass value="1.7306814821728753"/>
+    <inertia ixx="0.001825" iyy="0.003101" izz="0.001825" ixy="0.0" iyz="-0.0" ixz="0.001328"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.345 -0.249357 -0.19" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente9_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.345 -0.249357 -0.19" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente9_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Componente7_1">
+  <inertial>
+    <origin xyz="-0.02499999994111851 0.006030901224043428 2.837298729296833e-10" rpy="0 0 0"/>
+    <mass value="1.4452024438553985"/>
+    <inertia ixx="0.001211" iyy="0.000622" izz="0.001138" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37 -0.159357 -0.19" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37 -0.159357 -0.19" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Componente11_1">
+  <inertial>
+    <origin xyz="-0.048709588010716454 0.01200258295242005 -0.04870883556070176" rpy="0 0 0"/>
+    <mass value="0.4512300751073578"/>
+    <inertia ixx="0.000427" iyy="0.000821" izz="0.000427" ixy="-0.0" iyz="-0.0" ixz="-0.000399"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.437209 0.039377 -0.097791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente11_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.437209 0.039377 -0.097791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente11_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Componente12_1">
+  <inertial>
+    <origin xyz="0.03247290226366578 0.022501659202193585 -0.03247287469750182" rpy="0 0 0"/>
+    <mass value="1.7306832239222976"/>
+    <inertia ixx="0.001825" iyy="0.003101" izz="0.001825" ixy="-0.0" iyz="0.0" ixz="0.001328"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.345 0.049357 -0.19" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente12_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.345 0.049357 -0.19" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente12_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Componente8_1">
+  <inertial>
+    <origin xyz="-0.04870958801071629 -0.012002582952419849 -0.04870883556070164" rpy="0 0 0"/>
+    <mass value="0.45123007510735835"/>
+    <inertia ixx="0.000427" iyy="0.000821" izz="0.000427" ixy="0.0" iyz="0.0" ixz="-0.000399"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.437209 -0.239377 -0.097791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.437209 -0.239377 -0.097791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Componente10_1">
+  <inertial>
+    <origin xyz="-0.02499999994111851 -0.00603090122404349 2.837298729296833e-10" rpy="0 0 0"/>
+    <mass value="1.4452024438553985"/>
+    <inertia ixx="0.001211" iyy="0.000622" izz="0.001138" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37 -0.040643 -0.19" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente10_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37 -0.040643 -0.19" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://coque_description/meshes/Componente10_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolución1" type="continuous">
+  <origin xyz="0.092209 0.00998 -0.092209" rpy="0 0 0"/>
+  <parent link="Componente13_1"/>
+  <child link="Componente14_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolución2" type="continuous">
+  <origin xyz="-0.025 -0.09 0.0" rpy="0 0 0"/>
+  <parent link="Componente15_1"/>
+  <child link="Componente13_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolución3" type="continuous">
+  <origin xyz="0.08 0.04 0.19" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Componente15_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Revolución4" type="continuous">
+  <origin xyz="0.092209 -0.00998 -0.092209" rpy="0 0 0"/>
+  <parent link="Componente4_1"/>
+  <child link="Componente5_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolución5" type="continuous">
+  <origin xyz="-0.025 0.09 0.0" rpy="0 0 0"/>
+  <parent link="Componente6_1"/>
+  <child link="Componente4_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolución6" type="continuous">
+  <origin xyz="0.08 0.16 0.19" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Componente6_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Revolución7" type="continuous">
+  <origin xyz="-0.025 0.09 0.0" rpy="0 0 0"/>
+  <parent link="Componente7_1"/>
+  <child link="Componente9_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolución8" type="continuous">
+  <origin xyz="0.37 0.159357 0.19" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Componente7_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Revolución9" type="continuous">
+  <origin xyz="0.092209 0.00998 -0.092209" rpy="0 0 0"/>
+  <parent link="Componente12_1"/>
+  <child link="Componente11_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolución10" type="continuous">
+  <origin xyz="-0.025 -0.09 0.0" rpy="0 0 0"/>
+  <parent link="Componente10_1"/>
+  <child link="Componente12_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolución11" type="continuous">
+  <origin xyz="0.092209 -0.00998 -0.092209" rpy="0 0 0"/>
+  <parent link="Componente9_1"/>
+  <child link="Componente8_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolución12" type="continuous">
+  <origin xyz="0.37 0.040643 0.19" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Componente10_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+</robot>

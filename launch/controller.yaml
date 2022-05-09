@@ -1,0 +1,55 @@
+coque_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  Revolución1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Revolución2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Revolución3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Revolución4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Revolución5_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución5
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Revolución6_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución6
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Revolución7_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución7
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Revolución8_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución8
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Revolución9_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución9
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Revolución10_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución10
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Revolución11_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución11
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Revolución12_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolución12
+    pid: {p: 100.0, i: 0.01, d: 10.0}
